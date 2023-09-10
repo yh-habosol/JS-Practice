@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="clock">00:00</h1>
+    </header>
+    <form action="" , id="login-form">
+      <input
+        type="text"
+        ,
+        name="name"
+        ,
+        placeholder="Name"
+        ,
+        id="name"
+        ,
+        max="15"
+        ,
+        required
+      />
+      <input type="submit" ,class="login-button" value="Log In" />
+    </form>
+
+    <main class="main">
+      <div class="logout">
+        <button>&larr;</button>
+      </div>
+      <div class="user">
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+
+      <form action="" , id="todo-form">
+        <input
+          type="text"
+          ,
+          id="todo-input"
+          ,
+          placeholder="write a to do"
+          ,
+          max="25"
+          ,
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </main>
+
+    <nav class="nav">
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Screen is Too Big!!!!!</span>
+    </div>
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/bg.js"></script>
+    <script src="./js/whether.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/logout.js"></script>
+  </body>
+</html>
